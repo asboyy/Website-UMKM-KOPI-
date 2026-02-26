@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Talafu Coffee, UMKM kopi lokal dengan menu fresh roast, minuman signature, dan pemesanan cepat via WhatsApp."
+    />
+    <meta name="theme-color" content="#3E2723" />
+    <meta property="og:title" content="Talafu Coffee | Fresh Roast Everyday" />
+    <meta
+      property="og:description"
+      content="Kopi segar setiap hari, dukung petani lokal, pesan cepat via WhatsApp."
+    />
+    <meta property="og:type" content="website" />
+    <title>Talafu Coffee | UMKM Kopi Lokal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body class="interactive-surface" id="top">
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="header">
+      <nav class="navbar container" aria-label="Navigasi utama">
+        <a href="#top" class="brand" aria-label="Beranda Talafu Coffee">
+          <img src="logo.png" alt="Logo Talafu Coffee" />
+          <span>TALAFU COFFEE</span>
+        </a>
+
+        <button
+          class="hamburger"
+          aria-label="Buka menu navigasi"
+          aria-expanded="false"
+          aria-controls="main-menu"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="main-menu">
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#visit">Lokasi</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Hero Talafu Coffee">
+        <div class="hero-overlay"></div>
+        <div class="hero-noise" aria-hidden="true"></div>
+        <div class="container hero-layout">
+          <div class="hero-content">
+            <p class="eyebrow reveal-on-scroll">
+              Specialty Coffee - UMKM Medan
+            </p>
+            <h1 class="split-text">
+              Racikan Kopi yang Modern, dan Bikin Balik Lagi
+            </h1>
+            <p class="hero-subtext reveal-on-scroll">
+              Talafu Coffee menyajikan kopi segar harian dari petani lokal
+              dengan rasa yang konsisten dan pengalaman minum kopi yang lebih
+              personal.
+            </p>
+            <div class="hero-cta reveal-on-scroll">
+              <a href="#menu" class="btn">Pesan Sekarang</a>
+              <a href="#visit" class="btn btn-outline">Kunjungi Kedai</a>
+            </div>
+          </div>
+
+          <aside
+            class="hero-panel reveal-on-scroll"
+            aria-label="Highlight Talafu Coffee"
+          >
+            <img src="proyek 1.jpg" alt="Highlight menu Talafu Coffee" />
+            <div class="hero-panel-copy">
+              <h2>Fresh Roast Daily</h2>
+              <p>Biji dipanggang berkala untuk menjaga aroma tetap maksimal.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Info cepat Talafu Coffee">
+        <div class="ticker-track">
+          <span>Open Daily 08.00 - 22.00</span>
+          <span>Free konsultasi menu untuk event</span>
+          <span>Support petani kopi lokal Indonesia</span>
+          <span>Order cepat via WhatsApp</span>
+          <span>Open Daily 08.00 - 22.00</span>
+          <span>Free konsultasi menu untuk event</span>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="container">
+          <h2 class="section-title reveal-on-scroll">Cerita Talafu Coffee</h2>
+          <p class="section-text reveal-on-scroll">
+            Talafu Coffee tumbuh dari semangat memberdayakan petani kopi lokal.
+            Kami memilih biji terbaik langsung dari sumbernya, mengolah dengan
+            standar roasting terukur, lalu menyajikannya segar setiap hari.
+          </p>
+          <p class="section-text reveal-on-scroll">
+            Fokus kami bukan hanya rasa, tapi juga pengalaman. Mulai dari
+            espresso sampai manual brew, setiap menu diracik agar tetap
+            konsisten, hangat, dan relevan untuk gaya hidup modern.
+          </p>
+        </div>
+      </section>
+
+      <section id="menu" class="section products">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title reveal-on-scroll">Menu Kopi Talafu</h2>
+            <p class="section-text reveal-on-scroll">
+              Klik kategori, pilih menu, lalu order langsung.
+            </p>
+          </div>
+
+          <div
+            class="menu-filter reveal-on-scroll"
+            role="tablist"
+            aria-label="Filter menu kopi"
+          >
+            <button
+              class="filter-btn is-active"
+              type="button"
+              data-filter="all"
+            >
+              Semua
+            </button>
+            <button class="filter-btn" type="button" data-filter="beans">
+              Biji Kopi
+            </button>
+            <button class="filter-btn" type="button" data-filter="milk">
+              Milk Base
+            </button>
+            <button class="filter-btn" type="button" data-filter="manual">
+              Manual Brew
+            </button>
+            <button class="filter-btn" type="button" data-filter="cold">
+              Cold Menu
+            </button>
+          </div>
+
+          <div class="products-grid">
+            <article
+              class="product-card reveal-on-scroll"
+              data-category="beans"
+            >
+              <div class="product-media">
+                <img src="proyek 1.jpg" alt="Espresso Blend" loading="lazy" />
+              </div>
+              <div class="product-content">
+                <h3>Espresso Blend</h3>
+                <p>Campuran Arabika &amp; Robusta (Sedia Biji/Bubuk).</p>
+                <a
+                  class="wa-order"
+                  href="https://wa.me/628123456789?text=Halo%20Talafu%20Coffee%2C%20saya%20mau%20pesan%20Espresso%20Blend.%20Bisa%20kirim%20hari%20ini%3F"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Pesan via WhatsApp</a
+                >
+              </div>
+            </article>
+            <article
+              class="product-card reveal-on-scroll"
+              data-category="beans"
+            >
+              <div class="product-media">
+                <img
+                  src="proyek 1.jpg"
+                  alt="Gayo Single Origin"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-content">
+                <h3>Gayo Single Origin</h3>
+                <p>Notes rempah &amp; cokelat (Best Seller).</p>
+                <a
+                  class="wa-order"
+                  href="https://wa.me/628123456789?text=Halo%20Talafu%20Coffee%2C%20saya%20mau%20pesan%20Gayo%20Single%20Origin.%20Bisa%20kirim%20hari%20ini%3F"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Pesan via WhatsApp</a
+                >
+              </div>
+            </article>
+            <article
+              class="product-card reveal-on-scroll"
+              data-category="beans"
+            >
+              <div class="product-media">
+                <img src="proyek 1.jpg" alt="Toraja Kalosi" loading="lazy" />
+              </div>
+              <div class="product-content">
+                <h3>Toraja Kalosi</h3>
+                <p>Body tebal dengan aroma floral yang kuat.</p>
+                <a
+                  class="wa-order"
+                  href="https://wa.me/628123456789?text=Halo%20Talafu%20Coffee%2C%20saya%20mau%20pesan%20Toraja%20Kalosi.%20Bisa%20kirim%20hari%20ini%3F"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Pesan via WhatsApp</a
+                >
+              </div>
+            </article>
+            <article class="product-card reveal-on-scroll" data-category="milk">
+              <div class="product-media">
+                <img
+                  src="proyek 1.jpg"
+                  alt="Creamy Cafe Latte"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-content">
+                <h3>Creamy Cafe Latte</h3>
+                <p>Espresso dengan susu steamed yang lembut.</p>
+                <a
+                  class="wa-order"
+                  href="https://wa.me/628123456789?text=Halo%20Talafu%20Coffee%2C%20saya%20mau%20pesan%20Creamy%20Cafe%20Latte.%20Bisa%20kirim%20hari%20ini%3F"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Pesan via WhatsApp</a
+                >
+              </div>
+            </article>
+            <article
+              class="product-card reveal-on-scroll"
+              data-category="manual"
+            >
+              <div class="product-media">
+                <img src="proyek 1.jpg" alt="Manual Brew V60" loading="lazy" />
+              </div>
+              <div class="product-content">
+                <h3>Manual Brew V60</h3>
+                <p>Ekstraksi jernih untuk penikmat rasa asli.</p>
+                <a
+                  class="wa-order"
+                  href="https://wa.me/628123456789?text=Halo%20Talafu%20Coffee%2C%20saya%20mau%20pesan%20Manual%20Brew%20V60.%20Bisa%20kirim%20hari%20ini%3F"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Pesan via WhatsApp</a
+                >
+              </div>
+            </article>
+            <article class="product-card reveal-on-scroll" data-category="milk">
+              <div class="product-media">
+                <img
+                  src="proyek 1.jpg"
+                  alt="Kopi Susu Gula Aren"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-content">
+                <h3>Kopi Susu Gula Aren</h3>
+                <p>Resep autentik UMKM Talafu.</p>
+                <a
+                  class="wa-order"
+                  href="https://wa.me/628123456789?text=Halo%20Talafu%20Coffee%2C%20saya%20mau%20pesan%20Kopi%20Susu%20Gula%20Aren.%20Bisa%20kirim%20hari%20ini%3F"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Pesan via WhatsApp</a
+                >
+              </div>
+            </article>
+            <article class="product-card reveal-on-scroll" data-category="cold">
+              <div class="product-media">
+                <img src="proyek 1.jpg" alt="Cold Brew Bottle" loading="lazy" />
+              </div>
+              <div class="product-content">
+                <h3>Cold Brew Bottle</h3>
+                <p>Kopi dingin segar dalam kemasan 250ml.</p>
+                <a
+                  class="wa-order"
+                  href="https://wa.me/628123456789?text=Halo%20Talafu%20Coffee%2C%20saya%20mau%20pesan%20Cold%20Brew%20Bottle.%20Bisa%20kirim%20hari%20ini%3F"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Pesan via WhatsApp</a
+                >
+              </div>
+            </article>
+            <article class="product-card reveal-on-scroll" data-category="milk">
+              <div class="product-media">
+                <img
+                  src="proyek 1.jpg"
+                  alt="Matcha Coffee Latte"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-content">
+                <h3>Matcha Coffee Latte</h3>
+                <p>Perpaduan unik kopi dan teh hijau.</p>
+                <a
+                  class="wa-order"
+                  href="https://wa.me/628123456789?text=Halo%20Talafu%20Coffee%2C%20saya%20mau%20pesan%20Matcha%20Coffee%20Latte.%20Bisa%20kirim%20hari%20ini%3F"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Pesan via WhatsApp</a
+                >
+              </div>
+            </article>
+            <article class="product-card reveal-on-scroll" data-category="milk">
+              <div class="product-media">
+                <img
+                  src="proyek 1.jpg"
+                  alt="Caramel Macchiato"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-content">
+                <h3>Caramel Macchiato</h3>
+                <p>Manis karamel dengan layer susu estetik.</p>
+                <a
+                  class="wa-order"
+                  href="https://wa.me/628123456789?text=Halo%20Talafu%20Coffee%2C%20saya%20mau%20pesan%20Caramel%20Macchiato.%20Bisa%20kirim%20hari%20ini%3F"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Pesan via WhatsApp</a
+                >
+              </div>
+            </article>
+            <article
+              class="product-card reveal-on-scroll"
+              data-category="beans"
+            >
+              <div class="product-media">
+                <img
+                  src="proyek 1.jpg"
+                  alt="Biji Kopi Sangrai House Blend"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-content">
+                <h3>Biji Kopi Sangrai (House Blend)</h3>
+                <p>Kemasan 500g untuk stok di rumah.</p>
+                <a
+                  class="wa-order"
+                  href="https://wa.me/628123456789?text=Halo%20Talafu%20Coffee%2C%20saya%20mau%20pesan%20Biji%20Kopi%20Sangrai%20%28House%20Blend%29.%20Bisa%20kirim%20hari%20ini%3F"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Pesan via WhatsApp</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="visit" class="section visit">
+        <div class="container visit-grid">
+          <div class="map-wrap reveal-on-scroll">
+            <h2 class="section-title">Temui Talafu Coffee</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7963.148442685639!2d98.691204!3d3.6838970000000018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1772127163832!5m2!1sid!2sid"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Lokasi Talafu Coffee"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <aside class="social-wrap reveal-on-scroll">
+            <h3>Terhubung Dengan Kami</h3>
+            <p>Update menu, promo, dan order tercepat lewat sosial media.</p>
+            <div class="social-links">
+              <a
+                href="https://instagram.com/talafunisa"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram Talafu Coffee"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5a3.95 3.95 0 0 0 3.95 3.95h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95h-8.5zm8.95 1.35a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2zM12 6.75a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.8a3.45 3.45 0 1 0 0 6.9 3.45 3.45 0 0 0 0-6.9z"
+                  /></svg
+              ></a>
+              <a
+                href="https://www.tiktok.com/@talafunisa"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok Talafu Coffee"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M14.5 3c.3 1.5 1.2 2.8 2.5 3.7 1 .7 2.1 1.1 3.3 1.2v2.8a8.8 8.8 0 0 1-4-1v6.1a6.3 6.3 0 1 1-6.3-6.3c.4 0 .8 0 1.2.1V12a3.6 3.6 0 1 0 2.9 3.5V3h2.4z"
+                  /></svg
+              ></a>
+              <a
+                href="https://wa.me/628123456789"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp Talafu Coffee"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M20.5 3.5A10 10 0 0 0 4.1 18.9L3 22l3.2-1a10 10 0 1 0 14.3-17.5zM12 20a8 8 0 0 1-4.1-1.1l-.3-.2-1.9.6.6-1.8-.2-.3A8 8 0 1 1 12 20zm4.5-6.2c-.2-.1-1.3-.6-1.5-.7-.2-.1-.4-.1-.5.1-.2.2-.6.7-.7.8-.1.1-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.3.1-.5.1-.1.2-.2.3-.3l.2-.3c.1-.1.1-.3 0-.4l-.7-1.6c-.2-.4-.3-.3-.5-.3h-.4c-.2 0-.4.1-.6.3-.2.2-.8.7-.8 1.8 0 1 .8 2 1 2.3.1.2 1.8 2.8 4.3 3.9.6.3 1 .4 1.4.5.6.2 1.1.2 1.5.1.5-.1 1.3-.5 1.4-1 .2-.5.2-.9.1-1z"
+                  /></svg
+              ></a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Talafu Coffee. Fresh roast, local pride.</p>
+      </div>
+    </footer>
+  </body>
+</html>
